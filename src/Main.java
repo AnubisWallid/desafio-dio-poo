@@ -9,7 +9,9 @@ public class Main {
         curso1.setTitulo("Curso Java Básico");
         curso1.setDescricao("Noções básicas sobre os fundamentos Java");
         curso1.setCargaHoraria(8);
-        Curso curso2 = new Curso("Curso Java Intermediário",
+
+        Curso curso2 = new Curso(
+                "Curso Java Intermediário",
                 "Estruturas de dados com Java",
                 10);
 
