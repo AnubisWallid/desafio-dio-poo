@@ -1,9 +1,11 @@
 package br.com.dio.desafio.dominio;
 
 import java.time.LocalDate;
+import static br.com.dio.desafio.dominio.Bootcamp.dtf;
 
 public class Mentoria extends Conteudo{
     private LocalDate data;
+
     public Mentoria() {
     }
     public Mentoria(String titulo, String descricao, LocalDate data) {
@@ -27,7 +29,7 @@ public class Mentoria extends Conteudo{
         return "\nMentoria{" +
                 " titulo='" + getTitulo() + '\'' +
                 ", descricao= '" + getDescricao() + '\'' +
-                ", data= " + data +
+                ", data= " + data.format(dtf) +
                 "}";
     }
 }
